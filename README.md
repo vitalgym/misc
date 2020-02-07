@@ -6,3 +6,5 @@ And it says **"Hello, world!"**
 
 ---
 ## About "Hello, world!" pages
+
+To learn more about "Hello, world" pages you may use [Google](https://google.com)
