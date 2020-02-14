@@ -14,7 +14,6 @@ result = countWithDoWhile(MY_STRING, letterToSearch);
 console.log('do-while cycle result: ' + result);
 
 function countWithFor(searchString, letter) {
-
 	var sum = 0;
 	for (var i = 0; i < searchString.length; i++) {
 		if(searchString[i] === letter) {
@@ -26,7 +25,6 @@ function countWithFor(searchString, letter) {
 }
 
 function countWithWhile(searchString, letter) {
-
 	var sum = 0;
 	var i = 0;
 	while (i < searchString.length) {
@@ -41,7 +39,6 @@ function countWithWhile(searchString, letter) {
 
 
 function countWithDoWhile(searchString, letter) {
-
 	var sum = 0;
 	var i = 0;
 	do {
