@@ -44,11 +44,11 @@ function copyWithModify(origin, name, age, eyesColor) {
 	var newObject = {};
 	for(var key in origin) {
 		if (key === 'name') {
-			newObject[key] = 'Dmitriy Petrovich';
+			newObject[key] = name;
 		} else if(key === 'age') {
-			newObject[key] = 26;
+			newObject[key] = age;
 		} else if(key === 'eyesColor') {
-			newObject[key] = 'darkgreen';
+			newObject[key] = eyesColor;
 		} else{
 			newObject[key] = origin[key];
 		}
@@ -57,5 +57,5 @@ function copyWithModify(origin, name, age, eyesColor) {
 	return newObject;
 }
 
-var copyModifiedUser = copyWithModify(user);
+var copyModifiedUser = copyWithModify(user, 'Max', 20, 'red');
 console.log(copyModifiedUser);
