@@ -69,7 +69,7 @@ function deepEqual(obj1, obj2) {
 		return false;
 	}
 	
-	if (typeof obj1 === 'object' && typeof obj2 === 'object' &&	Object.keys(obj1).length !== Object.keys(obj2).length) {
+	if (typeof obj1 === 'object' && typeof obj2 === 'object' && Object.keys(obj1).length !== Object.keys(obj2).length) {
 		return false;
 	}
 
