@@ -2,8 +2,9 @@ var names = ['Joe', 'Michael', 'John', 'Jane', 'Mary'];
 
 function filter(arr, fn) {
 	let newArray = [];
+	
 	for (var i = 0; i < arr.length; i++) {
-		if(fn(arr[i], i, arr)){
+		if (fn(arr[i], i, arr)) {
 			newArray.push(arr[i]);
 		}
 	}
@@ -12,7 +13,7 @@ function filter(arr, fn) {
 }
 
 function filterConditions(item, index, array) {
-	if(item[0] === 'M'){ //first letter of current name is 'M'
+	if (item[0] === 'M') { //first letter of current name is 'M'
 		return true;
 	}
 

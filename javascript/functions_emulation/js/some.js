@@ -2,7 +2,7 @@ var names = ['Joe', 'Michael', 'John', 'Jane', 'Mary'];
 
 function some(arr, fn) {
 	for (var i = 0; i < arr.length; i++) {
-		if(fn(arr[i], i, arr)){
+		if (fn(arr[i], i, arr)) {
 			return true;
 		}
 	}
@@ -11,7 +11,7 @@ function some(arr, fn) {
 }
 
 function someConditions(item, index, array) {
-	if(item[0] === 'M'){ //first letter of current name is 'M'
+	if (item[0] === 'M') { //first letter of current name is 'M'
 		return true;
 	}
 

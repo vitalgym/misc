@@ -2,9 +2,11 @@ var names = ['Joe', 'Michael', 'John', 'Jane', 'Mary'];
 
 function map(arr, fn) {
 	let newArray = [];
+
 	for (var i = 0; i < arr.length; i++) {
 		let newElement = fn(arr[i], i, arr);
-		if(newElement){
+		
+		if (newElement) {
 			newArray.push(newElement);
 		}
 	}
@@ -13,7 +15,7 @@ function map(arr, fn) {
 }
 
 function mapConditions(item, index, array) {
-	if(item[0] === 'M'){ //first letter of current name is 'M'
+	if (item[0] === 'M') { // first letter of current name is 'M'
 		return item;
 	}
 }

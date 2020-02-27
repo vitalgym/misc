@@ -8,7 +8,7 @@ function forEach(arr, fn) {
 }
 
 function forEachConditions(item, index, array) {
-	if(item[0] === 'M'){ //first letter of current name is 'M'
+	if (item[0] === 'M') { // first letter of current name is 'M'
 		namesWithConditions.push(item);
 	}
 }

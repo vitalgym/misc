@@ -7,9 +7,10 @@ var user = {
 }
 
 // 1. Сreate copy of object
-function copy(origin){
+function copy(origin) {
 	var newObject = {};
-	for(var key in origin) {
+
+	for (var key in origin) {
 		newObject[key] = origin[key];
 	}
 	
@@ -22,12 +23,13 @@ console.log(copyUser);
 
 
 // 2. Сompare 2 objects by values and number of keys
-function isEqual(first, second){
-	if(Object.values(first).length !== Object.values(second).length){
+function isEqual(first, second) {
+	if (Object.values(first).length !== Object.values(second).length) {
 		return false;
 	}
-	for(var key in first) {
-		if(first[key] !== second[key]){
+	
+	for (var key in first) {
+		if (first[key] !== second[key]) {
 			return false;
 		}
 	}
@@ -42,14 +44,15 @@ console.log('Equal: ' + isEqual(user, copyUser));
 // 3. Сreate copy of object and modify it
 function copyWithModify(origin, name, age, eyesColor) {
 	var newObject = {};
-	for(var key in origin) {
+
+	for (var key in origin) {
 		if (key === 'name') {
 			newObject[key] = name;
 		} else if(key === 'age') {
 			newObject[key] = age;
 		} else if(key === 'eyesColor') {
 			newObject[key] = eyesColor;
-		} else{
+		} else {
 			newObject[key] = origin[key];
 		}
 	}
